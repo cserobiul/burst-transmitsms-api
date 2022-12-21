@@ -10,7 +10,7 @@ No Configuration Need
 ```
 
 ## Use from Controller
-Import Slug class
+Import TransmitsmsAPI class
 ```php
 use Cserobiul\BurstTransmitsmsApi\TransmitsmsAPI;
 ```
@@ -21,7 +21,7 @@ php artisan vendor:publish cserobiul/burst-transmitsms-api
 ```
 
 ### Single Number SEND SMS Example
-Suppose, we already have `blogs` table and added an `slug` column which is unique. Now, if we passed `title` and generate unique `slug` from that.
+At Controller Method
 
 ```php
 // set your api_key and api_secret from account settings
@@ -32,7 +32,7 @@ $apiSecret = 'b84f5205466579bb********ca87c9f6';
 $api = new TransmitsmsAPI($apiKey, $apiSecret);
 
 //write a message (as per your needed)
-$message = 'This sms has been sent from Burst TransmitSMS API throw cserobiul/burst-transmitsms-api package.'
+$message = 'This sms has been sent from Burst TransmitSMS API throught cserobiul/burst-transmitsms-api package.'
 $number = '6104****54**';
 
 //message sent  
