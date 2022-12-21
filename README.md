@@ -32,7 +32,7 @@ $apiSecret = 'b84f5205466579bb********ca87c9f6';
 $api = new TransmitsmsAPI($apiKey, $apiSecret);
 
 //write a message (as per your needed)
-$message = 'This sms has been sent from Burst TransmitSMS API throught cserobiul/burst-transmitsms-api package.'
+$message = 'This sms has been sent from Burst TransmitSMS API throught cserobiul/burst-transmitsms-api package.';
 $number = '6104****54**';
 
 //message sent  
