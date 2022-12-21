@@ -20,13 +20,22 @@ use Cserobiul\BurstTransmitsmsApi\TransmitsmsAPI;
 php artisan vendor:publish cserobiul/burst-transmitsms-api
 ```
 
+## Set API_KEY and API_SECRET from `config/transmitsms_api.php` file
+```php
+
+ 'API_KEY' => 'b84f52054********f789b******c9f6',
+ 
+ 'API_SECRET' => 'b84******66579bb********ca87c9f6',
+
+```
+
 ### Single Number SEND SMS Example
 At Controller Method
 
 ```php
 // set your api_key and api_secret from account settings
-$apiKey = 'b84f52054********f789bfeca87c9f6';
-$apiSecret = 'b84f5205466579bb********ca87c9f6';
+$apiKey = config('transmitsms_api.API_KEY');
+$apiSecret = config('transmitsms_api.API_SECRET');
 
 //create an instance
 $api = new TransmitsmsAPI($apiKey, $apiSecret);
