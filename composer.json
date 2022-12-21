@@ -1,0 +1,39 @@
+{
+    "name": "cserobiul/burst-transmitsms-api",
+    "description": "This API Package for Laravel User who want to use Australia based sms service provider Burst TransmitSMS gateway",
+    "keywords": [
+        "brust sms",
+        "brust transmit sms",
+        "transmitsms",
+        "transmitsms api",
+        "brust transmitsms api",
+        "brust transmitsms api laravel",
+        "brust transmitsms laravel",
+        "brust sms laravel",
+        "brust transmit laravel"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Cserobiul\\BurstTransmitsmsApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cserobiul",
+            "email": "abishar14@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cserobiul\\BurstTransmitsmsApi\\TransmitsmsServiceProvider"
+            ]
+        }
+    }
+}
